@@ -92,13 +92,13 @@
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                
-                 <a href="tel:08287584509"><i class="fa-solid fa-phone"></i>   08287584509</a>  <!-- new -->
+                 <a href="tel:08287584509"><i class="fa-solid fa-phone"></i>   ‪+91 8287584509‬</a>  <!-- new -->
 
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.facebook.com/share/15Bh5t4DU6/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.linkedin.com/in/ritesh-thakur-b9445a332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
-                    <a  class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.instagram.com/ncaitsolution/profilecard/?igsh=YXVoZGlncjVqYWl1"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.linkedin.com/in/nca-it-solution-aa3515375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                    <a  class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.instagram.com/ncaitsolution_noida?igsh=ODgxY2lqa2JtYmN1"><i class="fab fa-instagram"></i></a>
                     <a  class="btn  btn-link rounded-0 border-0 border-end border-secondary" href="https://www.justdial.com/Noida/Nca-It-Solution-Near-Electronic-City-Metro-Station-Noida-Sector-62/011PXX11-XX11-240204170018-P5R4_BZDET">Justdial</a>
                  <a class="btn text-dark btn-square btn-link rounded-0 " href="http://ncaitnoida.com/admin/login.php">
                         <!--<i class="fa-solid fa-user"></i>-->
@@ -136,29 +136,77 @@
     <span class="navbar-toggler-icon"></span>
 </button>
 
- <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link active">Home</a>
-                <a href="about.php" class="nav-item nav-link">About</a>
-                <a href="courses.php" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="services.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="software.php" class="dropdown-item">Software Development</a>
-                        <a href="ittraining.php" class="dropdown-item">IT Training</a>
-                        <!--<a href="institute.php" class="dropdown-item">Institute</a>-->
-                        <a href="internship.php" class="dropdown-item">Internship</a>
-                        <a href="digitalmarketing.php" class="dropdown-item">Digital Marketing</a>
-                        <a href="seo.php" class="dropdown-item">SEO</a>
-                        
-                    </div>
-                </div>
-                <a href="contact.php" class="nav-item nav-link">Contact</a>
-                <a href="download-certificate.php" class="nav-item nav-link">Certificate</a>
-            </div>
-           <!-- <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Started<i class="fa fa-arrow-right ms-3"></i></a> -->
+ <?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+$servicesPages = ['services.php', 'software.php', 'ittraining.php', 'internship.php', 'digitalmarketing.php', 'seo.php'];
+$isServicesActive = in_array($currentPage, $servicesPages);
+?>
+
+<div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="navbar-nav ms-auto p-4 p-lg-0">
+        <a href="index.php"
+           class="nav-item nav-link <?= $currentPage == 'index.php' ? 'active' : '' ?>"
+           style="<?= $currentPage == 'index.php' ? 'color: yellow;' : '' ?>"
+           onmouseover="if(this.classList.contains('active')) this.style.color='orange';"
+           onmouseout="if(this.classList.contains('active')) this.style.color='yellow';">
+           Home
+        </a>
+
+        <a href="about.php"
+           class="nav-item nav-link <?= $currentPage == 'about.php' ? 'active' : '' ?>"
+           style="<?= $currentPage == 'about.php' ? 'color: yellow;' : '' ?>"
+           onmouseover="if(this.classList.contains('active')) this.style.color='orange';"
+           onmouseout="if(this.classList.contains('active')) this.style.color='yellow';">
+           About
+        </a>
+
+        <a href="courses.php"
+           class="nav-item nav-link <?= $currentPage == 'courses.php' ? 'active' : '' ?>"
+           style="<?= $currentPage == 'courses.php' ? 'color: yellow;' : '' ?>"
+           onmouseover="if(this.classList.contains('active')) this.style.color='orange';"
+           onmouseout="if(this.classList.contains('active')) this.style.color='yellow';">
+           Courses
+        </a>
+
+        <!-- Services Dropdown -->
+        <div class="nav-item dropdown">
+            <a href="#"
+               class="nav-link dropdown-toggle <?= $isServicesActive ? 'active' : '' ?>"
+               style="<?= $isServicesActive ? 'color: yellow;' : '' ?>"
+               data-bs-toggle="dropdown"
+               aria-expanded="false"
+               onmouseover="if(this.classList.contains('active')) this.style.color='orange';"
+               onmouseout="if(this.classList.contains('active')) this.style.color='yellow';">
+               Services
+            </a>
+            <ul class="dropdown-menu bg-light m-0">
+                <li><a href="software.php" class="dropdown-item">Software Development</a></li>
+                <li><a href="ittraining.php" class="dropdown-item">IT Training</a></li>
+                <!-- <li><a href="institute.php" class="dropdown-item">Institute</a></li> -->
+                <li><a href="internship.php" class="dropdown-item">Internship</a></li>
+                <li><a href="digitalmarketing.php" class="dropdown-item">Digital Marketing</a></li>
+                <li><a href="seo.php" class="dropdown-item">SEO</a></li>
+            </ul>
         </div>
-    </nav>
+
+        <a href="contact.php"
+           class="nav-item nav-link <?= $currentPage == 'contact.php' ? 'active' : '' ?>"
+           style="<?= $currentPage == 'contact.php' ? 'color: yellow;' : '' ?>"
+           onmouseover="if(this.classList.contains('active')) this.style.color='orange';"
+           onmouseout="if(this.classList.contains('active')) this.style.color='yellow';">
+           Contact
+        </a>
+
+        <a href="download-certificate.php"
+           class="nav-item nav-link <?= $currentPage == 'download-certificate.php' ? 'active' : '' ?>"
+           style="<?= $currentPage == 'download-certificate.php' ? 'color: yellow;' : '' ?>"
+           onmouseover="if(this.classList.contains('active')) this.style.color='orange';"
+           onmouseout="if(this.classList.contains('active')) this.style.color='yellow';">
+           Certificate
+        </a>
+    </div>
+</div>
+   </nav>
     <!-- Navbar End -->
     
         <!-- Back to Top -->
