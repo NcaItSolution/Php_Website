@@ -1,0 +1,15 @@
+# robots.txt file for ncaitnoida.com
+
+# Allow all bots
+User-agent: *
+Disallow: /admin/        # Restrict access to the admin directory
+Disallow: /private/      # Restrict access to the private directory
+Disallow: /temp/         # Restrict access to the temporary files
+Disallow: /test.html     # Restrict access to a specific file
+Disallow: /cgi-bin/      # Common directory to disallow
+
+# Allow everything else
+Allow: /
+
+# Sitemap location
+Sitemap: https://ncaitnoida.com/sitemap.xml

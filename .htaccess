@@ -1,0 +1,116 @@
+# RewriteEngine On
+
+# # Remove www (optional)
+# RewriteCond %{HTTP_HOST} ^www\.ncaitnoida\.com [NC]
+# RewriteRule ^(.*)$ https://ncaitnoida.com/$1 [L,R=301]
+
+# # # Fix index.php issue
+# RewriteCond %{THE_REQUEST} /index\.php [NC]
+# RewriteRule ^(.*?)index\.php$ /$1 [R=301,L]
+
+# # Redirect old course URLs to new format
+# RewriteRule ^coursedetails\.php\?id=([0-9]+)$ /course/$1 [R=301,L,NE]
+
+# # # Primary course URL handling
+# RewriteRule ^course/([a-zA-Z0-9-]+)/?$ coursedetails.php?slug=$1 [L,QSA]
+# RewriteRule ^course/([0-9]+)/?$ coursedetails.php?id=$1 [L,QSA]
+
+# # WordPress rules (only if you're using WordPress)
+# <IfModule mod_rewrite.c>
+# RewriteEngine On
+#     RewriteBase /
+#    RewriteRule ^index\.php$ - [L]
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteRule . /index.php [L]
+# </IfModule>
+
+
+
+
+
+
+
+# # BEGIN Fix for index.php issue
+
+# RewriteEngine On
+
+# # Redirect "/coursesdetails.php/coursename=xyz" to "/courses/xyz"
+# RewriteCond %{THE_REQUEST} /coursesdetails\.php/coursename=([^\s&]+) [NC]
+# RewriteRule ^ /courses/%1? [R=301,L]
+
+# # Internally rewrite "/courses/xyz" to "coursesdetails.php?coursename=xyz"
+# RewriteRule ^courses/([a-z0-9-]+)/?$ coursesdetails.php?coursename=$1 [NC,L]
+
+# RewriteEngine On
+# RewriteCond %{THE_REQUEST} /index\.php [NC]
+# RewriteRule (.*)index.php$ /$1 [R=301,L]
+# RewriteEngine On
+# RewriteRule ^course/([a-zA-Z0-9-]+)/?$ coursedetails.php?slug=$1 [L]
+# RewriteEngine On
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+
+# RewriteEngine On
+# # Remove .php extension
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# RewriteRule ^(.*)$ $1.php [L]
+
+# # Redirect old URL to new SEO-friendly format
+# RewriteRule ^coursesdetails\.php/coursename/(.*)$ /courses/$1 [R=301,L]
+
+# # New SEO-friendly URL handling
+# RewriteRule ^courses/([a-zA-Z0-9-]+)$ course.php?slug=$1 [L]
+
+
+# # Handle new course URLs
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)$ coursedetails.php?slug=$1 [L]
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)/$ coursedetails.php?slug=$1 [L]
+
+# # Redirect old course URLs to new format
+# RewriteRule ^Course_details\.php?id=([0-9]+)$ /coursesdetails/$1 [R=301,L]
+
+# # Handle new course URLs
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)$ coursedetails.php?slug=$1 [L]
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)/$ coursedetails.php?slug=$1 [L]
+
+# # Handle direct ID access (optional)
+# RewriteRule ^coursedetails/([0-9]+)$ coursedetails.php?id=$1 [L]
+# RewriteRule ^coursedetails/([0-9]+)/$ coursedetails.php?id=$1 [L]
+
+# # BEGIN WordPress
+# RewriteEngine On
+# RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+# RewriteBase /
+# RewriteRule ^index\.php$ - [L]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule . /index.php [L]
+# # Handle new course URLs
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)$ coursedetails.php?slug=$1 [L]
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)/$ coursedetails.php?slug=$1 [L]
+# RewriteEngine On
+# RewriteRule ^course/([a-zA-Z0-9-]+)/?$ coursedetails.php?slug=$1 [L]
+
+# # Handle new course URLs
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)$ coursedetails.php?slug=$1 [L]
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)/$ coursedetails.php?slug=$1 [L]
+
+# # Redirect old course URLs to new format
+# RewriteRule ^Course_details\.php?id=([0-9]+)$ /coursesdetails/$1 [R=301,L]
+
+# # Handle new course URLs
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)$ coursedetails.php?slug=$1 [L]
+# RewriteRule ^coursedetails/([a-zA-Z0-9-]+)/$ coursedetails.php?slug=$1 [L]
+
+# Handle direct ID access (optional)
+# RewriteRule ^coursedetails/([0-9]+)$ coursedetails.php?id=$1 [L]
+# RewriteRule ^coursedetails/([0-9]+)/$ coursedetails.php?id=$1 [L]
+
+# END WordPress
+
