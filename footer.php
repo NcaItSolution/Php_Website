@@ -74,9 +74,9 @@
                    
                     <h3 class="text-primary mb-4">NCA IT Solution</h4>
                    
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i >Iconic Corenthum  Tower, Floor 24,Office no-2406A, Electronic City Metro Station, Noida Sector 62 <br/> </p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i >Iconic Corenthum  Tower, Floor 7,Office no-705A, Electronic City Metro Station, Noida Sector 62 <br/> </p>
                     <!--<p class="mb-2"><i class="fa fa-phone-alt me-3"></i>08287584509</p>-->
-                     <a href="tel:08287584509"><i class="fa-solid fa-phone"></i>  08287584509</a>
+                     <a href="tel:08287584509"><i class="fa-solid fa-phone"></i> +91 8287584509</a>
 
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>ncaitsolutionnoida@gmail.com</p>
         </div>

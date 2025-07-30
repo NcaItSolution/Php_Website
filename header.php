@@ -120,7 +120,7 @@
     <span>NCA IT SOLUTION</span>
            </h2>
 
-                    <p class="fs-6 fw-bold">  Software Development & IT Training </p>
+                    <p class="fs-6 fw-bold">IT Training & Software Development </p>
             </div>
            
         </a>

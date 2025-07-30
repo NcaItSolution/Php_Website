@@ -2,8 +2,8 @@
 <?php
 // Database connection old Database
 // $username = "mango7h1_nca_it";
-//$password = "Nca@256#5";
-//$dbname = "mango7h1_nca_it_noida";
+// $password = "Nca@256#5";
+// $dbname = "mango7h1_nca_it_noida";
 
 // Database connection new Databade
     $servername = "localhost";

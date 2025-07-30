@@ -485,304 +485,346 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 ?>
 
 <!-- Carousel Start -->
-    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <!--<img class="w-100" src="img/ncaitsolution1.jpg" alt="Image" style="height:100vh;">-->
-                    <img class="w-100" src="img/ncaitsolution7.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h2 class="display-2 text-light mb-5 animated slideInDown">Teach Coding Is Our Top
-                                        Priority</h2>
-                                    <a href="internship.php" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="courses.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div>
-                  <div class="carousel-item">
-                    <!--<img class="w-100" src="img/ncaitsolution2.jpg" alt="Image">-->
-                    <img class="w-100" src="img/ncaitsolution11.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h2 class="display-2 text-light mb-5 animated slideInDown">Learn To Coding best way</h2>
-                                    <a href="internship.php" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="courses.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+ <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+  <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1: Cyber Security -->
+      <div class="carousel-item active">
+        <img class="w-100" src="img/ncaitsolution7.jpg" alt="Cyber Security">
+        <div class="carousel-caption text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Cyber Security And Ethical Hacking</h2>
+                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
+                  Protect systems, networks, and programs from digital attacks. Learn ethical hacking, threat detection, and data privacy fundamentals.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
+                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
                 </div>
-                <div class="carousel-item">
-                    <!--<img class="w-100" src="img/ncaitsolution2.jpg" alt="Image">-->
-                    <img class="w-100" src="img/ncaitsolution4.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h2 class="display-2 text-light mb-5 animated slideInDown">Learn To Coding best way</h2>
-                                    <a href="internship.php" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="courses.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <!--<img class="w-100" src="img/ncaitsolution2.jpg" alt="Image">-->
-                    <img class="w-100" src="img/ncaitsolution3.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h2 class="display-2 text-light mb-5 animated slideInDown">Learn To Code With
-                                        Confidence</h2>
-                                    <a href="internship.php" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="courses.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <!--<img class="w-100" src="img/ncaitsolution2.jpg" alt="Image">-->
-                    <img class="w-100" src="img/ncaitsolution9.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7">
-                                    <h2 class="display-2 text-light mb-5 animated slideInDown">Coding experience, real-world Project</h2>
-                                    <a href="internship.php" class="btn btn-primary py-sm-3 px-sm-5">Learn More</a>
-                                    <a href="courses.php" class="btn btn-light py-sm-3 px-sm-5 ms-3">Our Courses</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+          </div>
         </div>
+      </div>
+
+      <!-- Slide 2: Data Science -->
+      <div class="carousel-item">
+        <img class="w-100" src="img/ncaitsolution11.jpg" alt="Data Science">
+        <div class="carousel-caption text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Data Science & Machine Learning</h2>
+                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
+                  Master data analysis, statistics, and machine learning models to make impactful, data-driven decisions in real-world scenarios.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
+                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Artificial Intelligence -->
+      <div class="carousel-item">
+        <img class="w-100" src="img/ncaitsolution4.jpg" alt="Artificial Intelligence">
+        <div class="carousel-caption text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Artificial Intelligence</h2>
+                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
+                  Explore intelligent systems, neural networks, and algorithms that simulate human thinking for automation and smart solutions.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
+                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Full Stack -->
+      <div class="carousel-item">
+        <img class="w-100" src="img/ncaitsolution3.jpg" alt="Full Stack Development">
+        <div class="carousel-caption text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Full Stack Development</h2>
+                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
+                  Become a versatile developer by mastering both frontend (React, HTML/CSS) and backend (Node.js, MongoDB, PHP) technologies.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
+                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</div>
+
+
     <!-- Carousel End -->
 
 
     <!-- Facts Start -->
-    <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa-solid fa-web-awesome   text-white"></i>
-                            </div>
-                            <div class="ps-4">
-                                <h5>Easy Coding Learn </h5>
-                                <span>Learn coding fundamentals with interactive tutorials and projects.</span>
-                            </div>
+   <div class="container-fluid facts py-5 pt-lg-0">
+    <div class="container py-5 pt-lg-0">
+        <div class="row gx-4 gy-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 180px; border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square bg-primary" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                            <i class="fa-solid fa-laptop-code text-white fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 style="font-weight: 600; color: #222;">Interactive Coding</h5>
+                            <span style="color: #555;">Master coding with hands-on lessons, real-world projects & intuitive guidance.</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-users text-white"></i>
-                            </div>
-                            <div class="ps-4">
-                                <h5>National Instructor</h5>
-                                <span>Expert training nationwide through our National Instructor program.</span>
-                            </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 180px; border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square bg-primary" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                            <i class="fa fa-chalkboard-teacher text-white fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 style="font-weight: 600; color: #222;">Top-Class Mentors</h5>
+                            <span style="color: #555;">Learn from industry experts guiding you with personalized support and insights.</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-file-alt text-white"></i>
-                            </div>
-                            <div class="ps-4">
-                                <h5>Get Opertunity</h5>
-                                <span>Unlock life-changing opportunities with Get Opportunity.</span>
-                            </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 180px; border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 btn-lg-square bg-primary" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                            <i class="fa fa-briefcase text-white fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 style="font-weight: 600; color: #222;">Career Opportunities</h5>
+                            <span style="color: #555;">Get access to exclusive job drives, internships & startup collaborations.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- Facts End -->
 
 
 
 
     <!-- About Start -->
-    <div class="container-xxl py-6">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
-                        <!--<img class="position-absolute w-100 h-100" src="img/training1.jfif" alt="training1"-->
-                        <img class="position-absolute w-100 h-100" src="img/Software/MultipleTraining.gif" alt="Training"
-                            style="object-fit: cover;">
-                        <img class="position-absolute top-0 start-0 bg-white pe-3 pb-3" src="img/Software/MultipleTraining.gif" alt=""
-                            style="width: 200px; height: 200px;">
+   <div class="container-xxl py-6" style="background-color: #f5f5f5;">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- Animated Image Section -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px; border-radius: 15px;">
+                    <div style="position: absolute; inset: 0; overflow: hidden; border-radius: 15px;">
+                        <img src="img/Software/MultipleTraining.gif" alt="Training"
+                            style="width: 100%; height: 100%; object-fit: cover; animation: slowZoom 20s ease-in-out infinite; border-radius: 15px;" />
                     </div>
+                    <img src="img/Software/MultipleTraining.gif" alt="Thumbnail"
+                        style="position: absolute; top: 0; left: 0; width: 200px; height: 200px; border: 5px solid #0d6efd; border-radius: 15px;" />
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <h6 class="text-primary text-uppercase mb-2">About Us</h6>
-                        <h2 class="display-6 mb-4">We Help Students To Pass Test & Get MNC On The First Try</h2>
-                        <p>At NCA IT NOIDA, we empower students to achieve success. Our expert-led training programs
-                            equip students with skills and confidence to pass prestigious tests and land MNC roles.</p>
-                        <p class="mb-4">With a proven track record, our comprehensive curriculum and mentorship ensure
-                            students outshine the competition. We offer industry-recognized certifications and strategic
-                            interview prep. Join us to unlock your potential.</p>
-                        <div class="row g-2 mb-4 pb-2">
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Comprehensive Support
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Guaranteed Success
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Afordable Fee
-                            </div>
-                            <div class="col-sm-6">
-                                <i class="fa fa-check text-primary me-2"></i>Best Trainers
-                            </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div style="padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+                    <h6 style="color: #0d6efd; font-weight: bold; text-transform: uppercase; margin-bottom: 10px;">About Us</h6>
+                    <h2 style="font-size: 32px; font-weight: 700; color: #212529; margin-bottom: 20px;">
+                        Transform Your Career with NCA IT NOIDA’s Expert Training
+                    </h2>
+                    <p style="color: #555; font-size: 16px;">
+                        At <strong>NCA IT NOIDA</strong>, we don’t just teach — we mentor, guide, and inspire. Our industry-driven programs are built to ensure you crack competitive tests and land roles in top MNCs with confidence.
+                    </p>
+                    <p style="color: #555; font-size: 16px; margin-bottom: 20px;">
+                        Join a learning community where success is the norm. From certified courses to mock interviews and real-world projects, we prepare you to stand out from the crowd and grab your dream job.
+                    </p>
+
+                    <div class="row g-2 mb-4 pb-2">
+                        <div class="col-sm-6" style="font-size: 15px;">
+                            <i class="fa fa-check text-primary me-2"></i>100% Placement Support
                         </div>
-                        <div class="row g-4">
-                            <div class="col-sm-6">
-                                <a class="btn btn-primary py-3 px-5" href="">Read More</a>
-                            </div>
-                            <div class="col-sm-6">
-                                <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2"
-                                    href="tel:+0123456789">
-                                    <span class="flex-shrink-0 btn-square bg-primary">
-                                        <i class="fa fa-phone-alt text-white"></i>
-                                    </span>
-                                    <span class="px-3">+91 8287584509</span>
-                                </a>
-                            </div>
+                        <div class="col-sm-6" style="font-size: 15px;">
+                            <i class="fa fa-check text-primary me-2"></i>Hands-on Real Projects
+                        </div>
+                        <div class="col-sm-6" style="font-size: 15px;">
+                            <i class="fa fa-check text-primary me-2"></i>Affordable & Flexible Fees
+                        </div>
+                        <div class="col-sm-6" style="font-size: 15px;">
+                            <i class="fa fa-check text-primary me-2"></i>Mentors from MNCs
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <a class="btn btn-primary py-3 px-5" href="#" style="border-radius: 10px; font-weight: 500;">
+                                Read More
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2"
+                                href="tel:+918287584509" style="border-radius: 10px; font-weight: 500;">
+                                <span class="flex-shrink-0 btn-square bg-primary" style="width: 40px; height: 40px; border-radius: 5px;">
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </span>
+                                <span class="px-3">+91 82875 84509</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End About -->
         </div>
     </div>
+</div>
+
+<!-- Inline CSS for Animation -->
+<style>
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
+
+        
     <!-- About End -->
     <!-- Courses Start -->
-    <div class="container-xxl courses my-6 py-6 pb-0">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Tranding Courses</h6>
-                <h2 class="display-6 mb-4">Our Courses Upskill You With Coding Training</h2>
-            </div>
-
-             <!--Moving Course Carousel Indicators Card Start-->
-            <div id="courseCarousel" class="carousel slide my-6" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators" id="carouselIndicators"></div>
-                <div class="carousel-inner" id="carouselInner"></div>
-
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <!--Moving Course Carousel Indicators Card End-->
-
-
-
-
+  <div class="container-xxl courses my-6 py-6 pb-0" style="background-color: #f9fbff;">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h6 class="text-primary text-uppercase mb-2" style="letter-spacing: 2px; font-weight: bold;">Popular Courses</h6>
+            <h2 class="display-6 mb-4" style="font-size: 34px; color: #0c2c68;">Master Coding with Our Industry-Aligned Courses</h2>
+            <p style="font-size: 16px; color: #555;">Upskill for the digital age with hands-on training designed by professionals. Learn faster, code smarter, and get job-ready with trending technologies.</p>
         </div>
+
+        <!-- Moving Course Carousel Indicators Card Start -->
+        <div id="courseCarousel" class="carousel slide my-6" data-bs-ride="carousel" data-bs-interval="3000" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); border-radius: 12px; overflow: hidden;">
+            <div class="carousel-indicators" id="carouselIndicators" style="bottom: -30px;"></div>
+            <div class="carousel-inner" id="carouselInner"></div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.1); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%);">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.1); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%);">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Moving Course Carousel Indicators Card End -->
     </div>
+</div>
+
         <!-- Courses End -->
 
 
-        <div class="container-xxl py-2">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="text-primary text-uppercase mb-2">Why Choose Our IT Training?</h6>
-                        <h1 class="display-6 mb-4">Best IT Training Services In Your City</h1>
-                        <p class="mb-5">Unlock your potential with top-notch IT training! Expert instructors, hands-on
-                            experience, and career-focused courses to boost your skills.</p>
-                        <div class="row gy-5 gx-4">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="flex-shrink-0 btn-square bg-primary me-3">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <h5 class="mb-0">Expert-Led Instruction</h5>
-                                </div>
-                                <span>Learn from industry experts who provide practical insights, real-world experience,
-                                    and guidance to make you job-ready.</span>
+       <div class="container-xxl py-2" style="background: linear-gradient(to right, #f0f4f8, #ffffff);">
+    <div class="container">
+        <div class="row g-2">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase mb-2" style="font-weight: bold;">Why Choose Our IT Training?</h6>
+                <h1 class="display-6 mb-4" style="color: #222; font-weight: 700;">Premier IT Training Tailored for You</h1>
+                <p class="mb-5" style="font-size: 17px; line-height: 1.7; color: #555;">
+                    Step into the future with our immersive IT programs designed to elevate your tech career.
+                    From hands-on learning to expert mentorship, we offer everything you need to thrive in the fast-paced IT world.
+                </p>
+                <div class="row gy-5 gx-4">
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
+                                <i class="fa fa-check text-white"></i>
                             </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="flex-shrink-0 btn-square bg-primary me-3">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <h5 class="mb-0">Comprehensive Curriculum</h5>
-                                </div>
-                                <span>Our curriculum covers foundational and advanced IT skills, ensuring you’re
-                                    equipped for diverse roles in the tech industry. </span>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="flex-shrink-0 btn-square bg-primary me-3">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <h5 class="mb-0">Hands-On Experience</h5>
-                                </div>
-                                <span>Engage in projects and real-world simulations to apply your knowledge practically
-                                    and build confidence for real IT challenges.</span>
-                            </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="flex-shrink-0 btn-square bg-primary me-3">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <h5 class="mb-0">Flexible Learning Options</h5>
-                                </div>
-                                <span>Choose from full-time, part-time, and online formats, allowing you to learn at
-                                    your own pace and convenience.</span>
-                            </div>
+                            <h5 class="mb-0" style="font-weight: 600;">Expert-Led Instruction</h5>
                         </div>
+                        <span style="color: #666;">Get mentored by seasoned professionals with real-world experience in top IT firms.</span>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px;">
-                            <img class="position-absolute w-100 h-100" src="img/Software/MultipleTraining.gif" alt="Training"
-                                style="object-fit: cover;">
-                            <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/Software/MultipleTraining.gif" alt=""
-                                style="width: 200px; height: 200px">
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
+                                <i class="fa fa-check text-white"></i>
+                            </div>
+                            <h5 class="mb-0" style="font-weight: 600;">Comprehensive Curriculum</h5>
                         </div>
+                        <span style="color: #666;">From basics to advanced, our in-depth modules keep you ahead of the curve in tech trends.</span>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
+                                <i class="fa fa-check text-white"></i>
+                            </div>
+                            <h5 class="mb-0" style="font-weight: 600;">Hands-On Experience</h5>
+                        </div>
+                        <span style="color: #666;">Build live projects, simulate real job tasks, and boost your confidence through practice.</span>
+                    </div>
+                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
+                                <i class="fa fa-check text-white"></i>
+                            </div>
+                            <h5 class="mb-0" style="font-weight: 600;">Flexible Learning Options</h5>
+                        </div>
+                        <span style="color: #666;">Whether online, offline, or hybrid — choose what suits you and study at your pace.</span>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
+                    <img class="position-absolute w-100 h-100" src="img/Software/MultipleTraining.gif" alt="Training"
+                        style="object-fit: cover; border-radius: 15px;">
+                    <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/Software/MultipleTraining.gif" alt=""
+                        style="width: 200px; height: 200px; border: 4px solid #fff; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.1);">
+                </div>
+            </div>
         </div>
+    </div>
+</div>
+
 <!-- Features End -->
         
         
