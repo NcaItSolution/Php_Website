@@ -485,6 +485,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 ?>
 
 <!-- Carousel Start -->
+<style>
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+</style>
+
  <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
   <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
