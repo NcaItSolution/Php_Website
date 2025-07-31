@@ -211,7 +211,7 @@ With a team of experienced trainers, state-of-the-art infrastructure, and a focu
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-        z-index: 1000;
+        z-index: 1051;
         display: flex;
         align-items: center;
         gap: 30px;
@@ -485,100 +485,62 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 ?>
 
 <!-- Carousel Start -->
-<style>
-.carousel-control-prev:hover,
-.carousel-control-next:hover,
-.carousel-control-prev:focus,
-.carousel-control-next:focus {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-</style>
-
- <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+<div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
   <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
 
-      <!-- Slide 1: Cyber Security -->
+      <!-- Slide 1 -->
       <div class="carousel-item active">
-        <img class="w-100" src="img/ncaitsolution7.jpg" alt="Cyber Security">
-        <div class="carousel-caption text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Cyber Security And Ethical Hacking</h2>
-                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
-                  Protect systems, networks, and programs from digital attacks. Learn ethical hacking, threat detection, and data privacy fundamentals.
-                </p>
-                <div style="display: flex; justify-content: center; gap: 15px;">
-                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
-                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
-                </div>
-              </div>
+        <img class="w-100" src="img/ncaitsolution7.jpg" alt="Cyber Security" style="height: 100vh; object-fit: cover;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; padding: 5vw;">
+          <div style="text-align: center; max-width: 900px; width: 100%;">
+            <h2 style="color: white; font-weight: bold; margin-bottom: 2vh; font-size: clamp(24px, 5vw, 64px); line-height: 1.2;">
+              Cyber Security And Ethical Hacking
+            </h2>
+            <p style="color: white; margin-bottom: 3vh; font-size: clamp(16px, 2vw, 28px); line-height: 1.5;">
+              Protect systems, networks, and programs from digital attacks. Learn ethical hacking, threat detection, and data privacy fundamentals.
+            </p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1vw;">
+              <a href="internship.php" style="background-color: #007bff; color: white; padding: 1vw 2.5vw; font-size: clamp(14px, 1.3vw, 22px); border: none; border-radius: 6px; text-decoration: none;">Learn More</a>
+              <a href="courses.php" style="border: 2px solid white; color: white; padding: 1vw 2.5vw; font-size: clamp(14px, 1.3vw, 22px); border-radius: 6px; text-decoration: none;">Our Courses</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 2: Data Science -->
+      <!-- Slide 2 -->
       <div class="carousel-item">
-        <img class="w-100" src="img/ncaitsolution11.jpg" alt="Data Science">
-        <div class="carousel-caption text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Data Science & Machine Learning</h2>
-                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
-                  Master data analysis, statistics, and machine learning models to make impactful, data-driven decisions in real-world scenarios.
-                </p>
-                <div style="display: flex; justify-content: center; gap: 15px;">
-                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
-                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
-                </div>
-              </div>
+        <img class="w-100" src="img/ncaitsolution8.jpg" alt="Full Stack" style="height: 100vh; object-fit: cover;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; padding: 5vw;">
+          <div style="text-align: center; max-width: 900px; width: 100%;">
+            <h2 style="color: white; font-weight: bold; margin-bottom: 2vh; font-size: clamp(24px, 5vw, 64px); line-height: 1.2;">
+              Full Stack Web Development
+            </h2>
+            <p style="color: white; margin-bottom: 3vh; font-size: clamp(16px, 2vw, 28px); line-height: 1.5;">
+              Master front-end & back-end development. Build real-world apps using HTML, CSS, JS, React, Node.js & MongoDB.
+            </p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1vw;">
+              <a href="internship.php" style="background-color: #007bff; color: white; padding: 1vw 2.5vw; font-size: clamp(14px, 1.3vw, 22px); border: none; border-radius: 6px; text-decoration: none;">Learn More</a>
+              <a href="courses.php" style="border: 2px solid white; color: white; padding: 1vw 2.5vw; font-size: clamp(14px, 1.3vw, 22px); border-radius: 6px; text-decoration: none;">Our Courses</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 3: Artificial Intelligence -->
+      <!-- Slide 3 -->
       <div class="carousel-item">
-        <img class="w-100" src="img/ncaitsolution4.jpg" alt="Artificial Intelligence">
-        <div class="carousel-caption text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Artificial Intelligence</h2>
-                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
-                  Explore intelligent systems, neural networks, and algorithms that simulate human thinking for automation and smart solutions.
-                </p>
-                <div style="display: flex; justify-content: center; gap: 15px;">
-                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
-                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 4: Full Stack -->
-      <div class="carousel-item">
-        <img class="w-100" src="img/ncaitsolution3.jpg" alt="Full Stack Development">
-        <div class="carousel-caption text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 style="font-size: 60px; color: white; font-weight: bold; margin-bottom: 20px; text-shadow: 2px 2px 10px rgba(0,0,0,0.6);">Full Stack Development</h2>
-                <p style="font-size: 20px; color: #f1f1f1; margin-bottom: 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
-                  Become a versatile developer by mastering both frontend (React, HTML/CSS) and backend (Node.js, MongoDB, PHP) technologies.
-                </p>
-                <div style="display: flex; justify-content: center; gap: 15px;">
-                  <a href="internship.php" style="padding: 12px 30px; background-color: #0d6efd; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Learn More</a>
-                  <a href="courses.php" style="padding: 12px 30px; background-color: transparent; border: 2px solid white; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s ease;">Our Courses</a>
-                </div>
-              </div>
+        <img class="w-100" src="img/ncaitsolution9.jpg" alt="Data Science" style="height: 100vh; object-fit: cover;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; padding: 5vw;">
+          <div style="text-align: center; max-width: 900px; width: 100%;">
+            <h2 style="color: white; font-weight: bold; margin-bottom: 2vh; font-size: clamp(24px, 5vw, 64px); line-height: 1.2;">
+              Data Science and Analytics
+            </h2>
+            <p style="color: white; margin-bottom: 3vh; font-size: clamp(16px, 2vw, 28px); line-height: 1.5;">
+              Learn data analysis, ML, and visualization. Master Python, statistics, Pandas, NumPy, and Scikit-learn.
+            </p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1vw;">
+              <a href="internship.php" style="background-color: #007bff; color: white; padding: 1vw 2.5vw; font-size: clamp(14px, 1.3vw, 22px); border: none; border-radius: 6px; text-decoration: none;">Learn More</a>
+              <a href="courses.php" style="border: 2px solid white; color: white; padding: 1vw 2.5vw; font-size: clamp(14px, 1.3vw, 22px); border-radius: 6px; text-decoration: none;">Our Courses</a>
             </div>
           </div>
         </div>
@@ -586,283 +548,543 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 
     </div>
 
-    <!-- Carousel Controls -->
+    <!-- Controls -->
     <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon"></span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="carousel-control-next-icon"></span>
     </button>
-
   </div>
 </div>
+
 
 
     <!-- Carousel End -->
 
 
-    <!-- Facts Start -->
-   <div class="container-fluid facts py-5 pt-lg-0">
-    <div class="container py-5 pt-lg-0">
-        <div class="row gx-4 gy-4">
+   <body style="margin: 0; padding: 0; font-family: 'Inter', sans-serif; background: #fafbfc;">
+
+<!-- Facts Section -->
+<section style="padding: 120px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
+    <!-- Background Pattern -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.1) 0%, transparent 50%); pointer-events: none;"></div>
+    
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1;">
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 80px;">
+            <h6 style="color: rgba(255,255,255,0.9); font-weight: 600; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; font-size: 14px;">Why Choose Us</h6>
+            <h2 style="color: white; font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 24px; line-height: 1.2;">Excellence in Every Aspect</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 20px; max-width: 600px; margin: 0 auto; line-height: 1.6;">Discover what makes us the premier choice for your career transformation</p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 40px;">
             <!-- Card 1 -->
-            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 180px; border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 btn-lg-square bg-primary" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
-                            <i class="fa-solid fa-laptop-code text-white fs-4"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 style="font-weight: 600; color: #222;">Interactive Coding</h5>
-                            <span style="color: #555;">Master coding with hands-on lessons, real-world projects & intuitive guidance.</span>
-                        </div>
+            <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius: 24px; padding: 40px; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; transform: translateY(0);" 
+                 onmouseover="this.style.transform='translateY(-12px) scale(1.02)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.15)'; this.style.background='rgba(255,255,255,1)';" 
+                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.95)';">
+                
+                <div style="display: flex; align-items: flex-start; gap: 24px;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3); flex-shrink: 0;">
+                        <i class="fa-solid fa-laptop-code" style="color: white; font-size: 32px;"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h5 style="font-size: 24px; font-weight: 700; color: #1a202c; margin-bottom: 16px; line-height: 1.3;">Interactive Coding</h5>
+                        <p style="color: #4a5568; font-size: 16px; line-height: 1.7; margin: 0;">Master coding with hands-on lessons, real-world projects & intuitive guidance that accelerates your learning journey.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 180px; border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 btn-lg-square bg-primary" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
-                            <i class="fa fa-chalkboard-teacher text-white fs-4"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 style="font-weight: 600; color: #222;">Top-Class Mentors</h5>
-                            <span style="color: #555;">Learn from industry experts guiding you with personalized support and insights.</span>
-                        </div>
+            <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius: 24px; padding: 40px; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; transform: translateY(0);" 
+                 onmouseover="this.style.transform='translateY(-12px) scale(1.02)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.15)'; this.style.background='rgba(255,255,255,1)';" 
+                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.95)';">
+                
+                <div style="display: flex; align-items: flex-start; gap: 24px;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3); flex-shrink: 0;">
+                        <i class="fa fa-chalkboard-teacher" style="color: white; font-size: 32px;"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h5 style="font-size: 24px; font-weight: 700; color: #1a202c; margin-bottom: 16px; line-height: 1.3;">Top-Class Mentors</h5>
+                        <p style="color: #4a5568; font-size: 16px; line-height: 1.7; margin: 0;">Learn from industry experts guiding you with personalized support and insights from their years of experience.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 180px; border-radius: 15px; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;" onmouseover="this.style.transform='scale(1.03)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'">
-                    <div class="d-flex">
-                        <div class="flex-shrink-0 btn-lg-square bg-primary" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
-                            <i class="fa fa-briefcase text-white fs-4"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 style="font-weight: 600; color: #222;">Career Opportunities</h5>
-                            <span style="color: #555;">Get access to exclusive job drives, internships & startup collaborations.</span>
-                        </div>
+            <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius: 24px; padding: 40px; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer; transform: translateY(0);" 
+                 onmouseover="this.style.transform='translateY(-12px) scale(1.02)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.15)'; this.style.background='rgba(255,255,255,1)';" 
+                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)'; this.style.background='rgba(255,255,255,0.95)';">
+                
+                <div style="display: flex; align-items: flex-start; gap: 24px;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3); flex-shrink: 0;">
+                        <i class="fa fa-briefcase" style="color: white; font-size: 32px;"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h5 style="font-size: 24px; font-weight: 700; color: #1a202c; margin-bottom: 16px; line-height: 1.3;">Career Opportunities</h5>
+                        <p style="color: #4a5568; font-size: 16px; line-height: 1.7; margin: 0;">Get access to exclusive job drives, internships & startup collaborations that launch your dream career.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
-    <!-- Facts End -->
-
-
-
-
-    <!-- About Start -->
-   <div class="container-xxl py-6" style="background-color: #f5f5f5;">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <!-- Animated Image Section -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px; border-radius: 15px;">
-                    <div style="position: absolute; inset: 0; overflow: hidden; border-radius: 15px;">
-                        <img src="img/Software/MultipleTraining.gif" alt="Training"
-                            style="width: 100%; height: 100%; object-fit: cover; animation: slowZoom 20s ease-in-out infinite; border-radius: 15px;" />
-                    </div>
-                    <img src="img/Software/MultipleTraining.gif" alt="Thumbnail"
-                        style="position: absolute; top: 0; left: 0; width: 200px; height: 200px; border: 5px solid #0d6efd; border-radius: 15px;" />
-                </div>
+<!-- About Section -->
+<section style="padding: 140px 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); position: relative;">
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 24px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); gap: 80px; align-items: center;">
+            
+            <!-- Image Section -->
+            <div style="position: relative; min-height: 600px; border-radius: 32px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.15);">
+                <!-- Main Background Image -->
+                <div style="position: absolute; inset: 0; background: url('https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover; animation: slowZoom 40s ease-in-out infinite; border-radius: 32px;"></div>
+                
+                <!-- Floating Overlay Image -->
+                <div style="position: absolute; top: 32px; left: 32px; width: 220px; height: 220px; background: url('https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=400') center/cover; border: 8px solid white; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.25); animation: float 8s ease-in-out infinite;"></div>
+                
+                <!-- Gradient Overlay -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border-radius: 32px;"></div>
             </div>
 
-            <!-- About Section -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div style="padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
-                    <h6 style="color: #0d6efd; font-weight: bold; text-transform: uppercase; margin-bottom: 10px;">About Us</h6>
-                    <h2 style="font-size: 32px; font-weight: 700; color: #212529; margin-bottom: 20px;">
-                        Transform Your Career with NCA IT NOIDA’s Expert Training
-                    </h2>
-                    <p style="color: #555; font-size: 16px;">
-                        At <strong>NCA IT NOIDA</strong>, we don’t just teach — we mentor, guide, and inspire. Our industry-driven programs are built to ensure you crack competitive tests and land roles in top MNCs with confidence.
+            <!-- Content Section -->
+            <div style="background: rgba(255,255,255,0.9); backdrop-filter: blur(20px); padding: 60px; border-radius: 32px; box-shadow: 0 40px 100px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.2);">
+                <div style="margin-bottom: 20px;">
+                    <h6 style="color: #667eea; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; font-size: 14px;">About Us</h6>
+                    <h2 style="font-size: clamp(32px, 4vw, 42px); font-weight: 800; color: #1a202c; margin-bottom: 32px; line-height: 1.2;">Transform Your Career with NCA IT NOIDA's Expert Training</h2>
+                </div>
+                
+                <div style="margin-bottom: 40px;">
+                    <p style="color: #4a5568; font-size: 18px; line-height: 1.8; margin-bottom: 24px;">
+                        At <strong style="color: #667eea;">NCA IT NOIDA</strong>, we don't just teach — we mentor, guide, and inspire. Our industry-driven programs are built to ensure you crack competitive tests and land roles in top MNCs with confidence.
                     </p>
-                    <p style="color: #555; font-size: 16px; margin-bottom: 20px;">
+                    <p style="color: #4a5568; font-size: 18px; line-height: 1.8; margin-bottom: 0;">
                         Join a learning community where success is the norm. From certified courses to mock interviews and real-world projects, we prepare you to stand out from the crowd and grab your dream job.
                     </p>
+                </div>
 
-                    <div class="row g-2 mb-4 pb-2">
-                        <div class="col-sm-6" style="font-size: 15px;">
-                            <i class="fa fa-check text-primary me-2"></i>100% Placement Support
+                <!-- Features Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 50px;">
+                    <div style="display: flex; align-items: center; font-size: 16px; font-weight: 500;">
+                        <div style="width: 24px; height: 24px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;">
+                            <i class="fa fa-check" style="color: white; font-size: 12px;"></i>
                         </div>
-                        <div class="col-sm-6" style="font-size: 15px;">
-                            <i class="fa fa-check text-primary me-2"></i>Hands-on Real Projects
-                        </div>
-                        <div class="col-sm-6" style="font-size: 15px;">
-                            <i class="fa fa-check text-primary me-2"></i>Affordable & Flexible Fees
-                        </div>
-                        <div class="col-sm-6" style="font-size: 15px;">
-                            <i class="fa fa-check text-primary me-2"></i>Mentors from MNCs
-                        </div>
+                        100% Placement Support
                     </div>
+                    <div style="display: flex; align-items: center; font-size: 16px; font-weight: 500;">
+                        <div style="width: 24px; height: 24px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;">
+                            <i class="fa fa-check" style="color: white; font-size: 12px;"></i>
+                        </div>
+                        Hands-on Real Projects
+                    </div>
+                    <div style="display: flex; align-items: center; font-size: 16px; font-weight: 500;">
+                        <div style="width: 24px; height: 24px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;">
+                            <i class="fa fa-check" style="color: white; font-size: 12px;"></i>
+                        </div>
+                        Affordable & Flexible Fees
+                    </div>
+                    <div style="display: flex; align-items: center; font-size: 16px; font-weight: 500;">
+                        <div style="width: 24px; height: 24px; background: #667eea; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 16px; flex-shrink: 0;">
+                            <i class="fa fa-check" style="color: white; font-size: 12px;"></i>
+                        </div>
+                        Mentors from MNCs
+                    </div>
+                </div>
 
-                    <div class="row g-4">
-                        <div class="col-sm-6">
-                            <a class="btn btn-primary py-3 px-5" href="#" style="border-radius: 10px; font-weight: 500;">
-                                Read More
-                            </a>
+                <!-- Action Buttons -->
+                <div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center;">
+                    <button style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 18px 36px; border-radius: 16px; font-weight: 600; font-size: 16px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);" 
+                            onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 16px 48px rgba(102, 126, 234, 0.4)';" 
+                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 32px rgba(102, 126, 234, 0.3)';">
+                        Read More
+                    </button>
+                    
+                    <a href="tel:+918287584509" style="display: flex; align-items: center; text-decoration: none; color: #667eea; border: 2px solid #667eea; padding: 16px 24px; border-radius: 16px; font-weight: 600; transition: all 0.3s ease;" 
+                       onmouseover="this.style.background='#667eea'; this.style.color='white'; this.style.transform='translateY(-3px)';" 
+                       onmouseout="this.style.background='transparent'; this.style.color='#667eea'; this.style.transform='translateY(0)';">
+                        <div style="width: 48px; height: 48px; background: #667eea; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 16px;">
+                            <i class="fa fa-phone-alt" style="color: white; font-size: 18px;"></i>
                         </div>
-                        <div class="col-sm-6">
-                            <a class="d-inline-flex align-items-center btn btn-outline-primary border-2 p-2"
-                                href="tel:+918287584509" style="border-radius: 10px; font-weight: 500;">
-                                <span class="flex-shrink-0 btn-square bg-primary" style="width: 40px; height: 40px; border-radius: 5px;">
-                                    <i class="fa fa-phone-alt text-white"></i>
-                                </span>
-                                <span class="px-3">+91 82875 84509</span>
-                            </a>
-                        </div>
+                        +91 82875 84509
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section style="padding: 140px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
+    <!-- Background Pattern -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 70% 60%, rgba(255,255,255,0.1) 0%, transparent 50%); pointer-events: none;"></div>
+    
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1;">
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 80px; color: white;">
+            <h6 style="color: rgba(255,255,255,0.9); font-weight: 600; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; font-size: 14px;">Popular Courses</h6>
+            <h2 style="font-size: clamp(32px, 5vw, 48px); font-weight: 800; margin-bottom: 24px; line-height: 1.2;">Master Coding with Our Industry-Aligned Courses</h2>
+            <p style="font-size: 20px; max-width: 700px; margin: 0 auto; opacity: 0.9; line-height: 1.6;">Upskill for the digital age with hands-on training designed by professionals. Learn faster, code smarter, and get job-ready with trending technologies.</p>
+        </div>
+
+        <!-- Course Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
+            <!-- Course 1 -->
+            <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.2); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;" 
+                 onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.15)';" 
+                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)';">
+                
+                <div style="height: 240px; background: url('https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800') center/cover; position: relative;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);"></div>
+                </div>
+                
+                <div style="padding: 40px;">
+                    <h3 style="font-size: 24px; font-weight: 700; color: #1a202c; margin-bottom: 16px;">Full Stack Development</h3>
+                    <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">Master modern web development with React, Node.js, and MongoDB. Build real-world applications from scratch.</p>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600;">4-6 Months</span>
+                        <button style="background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 24px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;" 
+                                onmouseover="this.style.background='#667eea'; this.style.color='white';" 
+                                onmouseout="this.style.background='transparent'; this.style.color='#667eea';">
+                            Learn More
+                        </button>
                     </div>
                 </div>
             </div>
-            <!-- End About -->
+
+            <!-- Course 2 -->
+            <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.2); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;" 
+                 onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.15)';" 
+                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)';">
+                
+                <div style="height: 240px; background: url('https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800') center/cover; position: relative;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);"></div>
+                </div>
+                
+                <div style="padding: 40px;">
+                    <h3 style="font-size: 24px; font-weight: 700; color: #1a202c; margin-bottom: 16px;">Data Science & AI</h3>
+                    <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">Learn Python, Machine Learning, and AI fundamentals. Work with real datasets and build intelligent systems.</p>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600;">3 Months</span>
+                        <button style="background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 24px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;" 
+                                onmouseover="this.style.background='#667eea'; this.style.color='white';" 
+                                onmouseout="this.style.background='transparent'; this.style.color='#667eea';">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div style="background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-radius: 24px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.2); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;" 
+                 onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 40px 80px rgba(0,0,0,0.15)';" 
+                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)';">
+                
+                <div style="height: 240px; background: url('https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=800') center/cover; position: relative;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);"></div>
+                </div>
+                
+                <div style="padding: 40px;">
+                    <h3 style="font-size: 24px; font-weight: 700; color: #1a202c; margin-bottom: 16px;">Mobile App Development</h3>
+                    <p style="color: #4a5568; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">Build cross-platform apps with React Native and Flutter. Create stunning mobile experiences.</p>
+                    
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600;">4-6 Months</span>
+                        <button style="background: transparent; border: 2px solid #667eea; color: #667eea; padding: 12px 24px; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;" 
+                                onmouseover="this.style.background='#667eea'; this.style.color='white';" 
+                                onmouseout="this.style.background='transparent'; this.style.color='#667eea';">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section style="padding: 140px 0; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+    <div style="max-width: 1400px; margin: 0 auto; padding: 0 24px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); gap: 80px; align-items: center;">
+            
+            <!-- Content Section -->
+            <div>
+                <div style="margin-bottom: 40px;">
+                    <h6 style="color: #667eea; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; font-size: 14px;">Why Choose Our IT Training?</h6>
+                    <h1 style="font-size: clamp(32px, 4vw, 48px); font-weight: 800; color: #1a202c; margin-bottom: 32px; line-height: 1.2;">Premier IT Training Tailored for You</h1>
+                    <p style="font-size: 18px; line-height: 1.8; color: #4a5568; margin-bottom: 0;">
+                        Step into the future with our immersive IT programs designed to elevate your tech career. From hands-on learning to expert mentorship, we offer everything you need to thrive in the fast-paced IT world.
+                    </p>
+                </div>
+                
+                <!-- Features Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+                    <!-- Feature 1 -->
+                    <div style="padding: 32px; background: rgba(255,255,255,0.8); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease; cursor: pointer;" 
+                         onmouseover="this.style.background='rgba(255,255,255,0.95)'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)';" 
+                         onmouseout="this.style.background='rgba(255,255,255,0.8)'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fa fa-check" style="color: white; font-size: 24px;"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin: 0; color: #1a202c; font-size: 20px;">Expert-Led Instruction</h5>
+                        </div>
+                        <p style="color: #4a5568; margin: 0; line-height: 1.6; font-size: 16px;">Get mentored by seasoned professionals with real-world experience in top IT firms.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div style="padding: 32px; background: rgba(255,255,255,0.8); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease; cursor: pointer;" 
+                         onmouseover="this.style.background='rgba(255,255,255,0.95)'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)';" 
+                         onmouseout="this.style.background='rgba(255,255,255,0.8)'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fa fa-check" style="color: white; font-size: 24px;"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin: 0; color: #1a202c; font-size: 20px;">Comprehensive Curriculum</h5>
+                        </div>
+                        <p style="color: #4a5568; margin: 0; line-height: 1.6; font-size: 16px;">From basics to advanced, our in-depth modules keep you ahead of the curve in tech trends.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div style="padding: 32px; background: rgba(255,255,255,0.8); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease; cursor: pointer;" 
+                         onmouseover="this.style.background='rgba(255,255,255,0.95)'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)';" 
+                         onmouseout="this.style.background='rgba(255,255,255,0.8)'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fa fa-check" style="color: white; font-size: 24px;"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin: 0; color: #1a202c; font-size: 20px;">Hands-On Experience</h5>
+                        </div>
+                        <p style="color: #4a5568; margin: 0; line-height: 1.6; font-size: 16px;">Build live projects, simulate real job tasks, and boost your confidence through practice.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div style="padding: 32px; background: rgba(255,255,255,0.8); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease; cursor: pointer;" 
+                         onmouseover="this.style.background='rgba(255,255,255,0.95)'; this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 60px rgba(0,0,0,0.1)';" 
+                         onmouseout="this.style.background='rgba(255,255,255,0.8)'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
+                                <i class="fa fa-check" style="color: white; font-size: 24px;"></i>
+                            </div>
+                            <h5 style="font-weight: 700; margin: 0; color: #1a202c; font-size: 20px;">Flexible Learning Options</h5>
+                        </div>
+                        <p style="color: #4a5568; margin: 0; line-height: 1.6; font-size: 16px;">Whether online, offline, or hybrid — choose what suits you and study at your pace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div style="position: relative; min-height: 600px; border-radius: 32px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.15);">
+                <!-- Main Background Image -->
+                <div style="position: absolute; inset: 0; background: url('https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover; border-radius: 32px;"></div>
+                
+                <!-- Floating Overlay Image -->
+                <div style="position: absolute; top: 32px; right: 32px; width: 220px; height: 220px; background: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=400') center/cover; border: 8px solid white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.25);"></div>
+                
+                <!-- Gradient Overlay -->
+                <div style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border-radius: 32px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popup Form -->
+<div id="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); z-index: 1050; display: none;"></div>
+
+<div id="popupForm" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border-radius: 24px; padding: 0; max-width: 500px; width: 90%; max-height: 90vh; overflow: hidden; z-index: 1051; box-shadow: 0 40px 100px rgba(0,0,0,0.3); display: none;">
+    
+    <!-- Close Button -->
+    <span onclick="hidePopup()" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.1); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 20px; color: #666; z-index: 10; transition: all 0.3s ease;" 
+          onmouseover="this.style.background='rgba(0,0,0,0.2)'; this.style.color='#333';" 
+          onmouseout="this.style.background='rgba(0,0,0,0.1)'; this.style.color='#666';">&times;</span>
+    
+    <!-- Header Image -->
+    <div style="height: 200px; background: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500') center/cover; position: relative;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(45deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);"></div>
+    </div>
+    
+    <!-- Form Content -->
+    <div style="padding: 40px;">
+        <form action="submit_form.php" method="post" style="display: flex; flex-direction: column; gap: 24px;">
+            <h3 style="text-align: center; color: #1a202c; margin-bottom: 8px; font-size: 28px; font-weight: 700;">Get Started Today</h3>
+            <p style="text-align: center; color: #4a5568; margin-bottom: 24px; font-size: 16px;">Fill in your details and we'll get back to you shortly</p>
+            
+            <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #4a5568; font-size: 14px;">Full Name</label>
+                <input type="text" name="name" required style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 16px; transition: all 0.3s ease; outline: none; background: #f8fafc;" 
+                       onfocus="this.style.borderColor='#667eea'; this.style.background='white';" 
+                       onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc';" 
+                       placeholder="Enter your full name">
+            </div>
+            
+            <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #4a5568; font-size: 14px;">Phone Number</label>
+                <input type="tel" name="phone" required style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 16px; transition: all 0.3s ease; outline: none; background: #f8fafc;" 
+                       onfocus="this.style.borderColor='#667eea'; this.style.background='white';" 
+                       onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc';" 
+                       placeholder="Enter your phone number">
+            </div>
+            
+            <div>
+                <label style="display: block; margin-bottom: 8px; font-weight: 600; color: #4a5568; font-size: 14px;">Email Address</label>
+                <input type="email" name="email" required style="width: 100%; padding: 16px 20px; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 16px; transition: all 0.3s ease; outline: none; background: #f8fafc;" 
+                       onfocus="this.style.borderColor='#667eea'; this.style.background='white';" 
+                       onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc';" 
+                       placeholder="Enter your email address">
+            </div>
+            
+            <button type="submit" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 18px; border-radius: 12px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; margin-top: 16px; box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);" 
+                    onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 16px 48px rgba(102, 126, 234, 0.4)';" 
+                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 32px rgba(102, 126, 234, 0.3)';">
+                Submit Application
+            </button>
+        </form>
     </div>
 </div>
 
-<!-- Inline CSS for Animation -->
+<!-- Floating Action Button -->
+<button onclick="showPopup()" style="position: fixed; bottom: 32px; right: 3px; width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; color: white; font-size: 24px; cursor: pointer; box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4); z-index: 100; transition: all 0.3s ease;" 
+        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 16px 48px rgba(102, 126, 234, 0.5)';" 
+        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 32px rgba(102, 126, 234, 0.4)';">
+    <i class="fa fa-comments"></i>
+</button>
+
+<!-- Animations and Responsive Styles -->
 <style>
 @keyframes slowZoom {
-    0% {
-        transform: scale(1);
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 80px 0 !important;
     }
-    50% {
-        transform: scale(1.06);
+    
+    .container, div[style*="max-width: 1400px"] {
+        padding: 0 16px !important;
     }
-    100% {
-        transform: scale(1);
+    
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(380px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+    
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(600px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+    
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+    
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    div[style*="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))"] {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    div[style*="padding: 60px"] {
+        padding: 32px !important;
+    }
+    
+    div[style*="padding: 40px"] {
+        padding: 24px !important;
+    }
+    
+    div[style*="padding: 32px"] {
+        padding: 20px !important;
+    }
+    
+    div[style*="gap: 80px"] {
+        gap: 40px !important;
+    }
+    
+    div[style*="gap: 40px"] {
+        gap: 24px !important;
+    }
+    
+    div[style*="gap: 24px"] {
+        gap: 16px !important;
+    }
+    
+    div[style*="min-height: 600px"] {
+        min-height: 400px !important;
+    }
+    
+    div[style*="width: 220px; height: 220px"] {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    
+    div[style*="width: 80px; height: 80px"] {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    div[style*="font-size: 32px"] i {
+        font-size: 24px !important;
+    }
+    
+    button[style*="bottom: 32px; right: 32px"] {
+        bottom: 20px !important;
+        right: 20px !important;
+        width: 56px !important;
+        height: 56px !important;
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    div[style*="flex-wrap: wrap"] {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    
+    a[href^="tel:"] {
+        justify-content: center !important;
     }
 }
 </style>
 
-        
-    <!-- About End -->
-    <!-- Courses Start -->
-  <div class="container-xxl courses my-6 py-6 pb-0" style="background-color: #f9fbff;">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h6 class="text-primary text-uppercase mb-2" style="letter-spacing: 2px; font-weight: bold;">Popular Courses</h6>
-            <h2 class="display-6 mb-4" style="font-size: 34px; color: #0c2c68;">Master Coding with Our Industry-Aligned Courses</h2>
-            <p style="font-size: 16px; color: #555;">Upskill for the digital age with hands-on training designed by professionals. Learn faster, code smarter, and get job-ready with trending technologies.</p>
-        </div>
+<script>
+function showPopup() {
+    document.getElementById('overlay').style.display = 'block';
+    document.getElementById('popupForm').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
 
-        <!-- Moving Course Carousel Indicators Card Start -->
-        <div id="courseCarousel" class="carousel slide my-6" data-bs-ride="carousel" data-bs-interval="3000" style="box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); border-radius: 12px; overflow: hidden;">
-            <div class="carousel-indicators" id="carouselIndicators" style="bottom: -30px;"></div>
-            <div class="carousel-inner" id="carouselInner"></div>
+function hidePopup() {
+    document.getElementById('overlay').style.display = 'none';
+    document.getElementById('popupForm').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev" style="background-color: rgba(0, 0, 0, 0.1); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%);">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next" style="background-color: rgba(0, 0, 0, 0.1); border-radius: 50%; width: 40px; height: 40px; top: 50%; transform: translateY(-50%);">
-                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- Moving Course Carousel Indicators Card End -->
-    </div>
-</div>
-
-        <!-- Courses End -->
-
-
-       <div class="container-xxl py-2" style="background: linear-gradient(to right, #f0f4f8, #ffffff);">
-    <div class="container">
-        <div class="row g-2">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase mb-2" style="font-weight: bold;">Why Choose Our IT Training?</h6>
-                <h1 class="display-6 mb-4" style="color: #222; font-weight: 700;">Premier IT Training Tailored for You</h1>
-                <p class="mb-5" style="font-size: 17px; line-height: 1.7; color: #555;">
-                    Step into the future with our immersive IT programs designed to elevate your tech career.
-                    From hands-on learning to expert mentorship, we offer everything you need to thrive in the fast-paced IT world.
-                </p>
-                <div class="row gy-5 gx-4">
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
-                                <i class="fa fa-check text-white"></i>
-                            </div>
-                            <h5 class="mb-0" style="font-weight: 600;">Expert-Led Instruction</h5>
-                        </div>
-                        <span style="color: #666;">Get mentored by seasoned professionals with real-world experience in top IT firms.</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
-                                <i class="fa fa-check text-white"></i>
-                            </div>
-                            <h5 class="mb-0" style="font-weight: 600;">Comprehensive Curriculum</h5>
-                        </div>
-                        <span style="color: #666;">From basics to advanced, our in-depth modules keep you ahead of the curve in tech trends.</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
-                                <i class="fa fa-check text-white"></i>
-                            </div>
-                            <h5 class="mb-0" style="font-weight: 600;">Hands-On Experience</h5>
-                        </div>
-                        <span style="color: #666;">Build live projects, simulate real job tasks, and boost your confidence through practice.</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="flex-shrink-0 btn-square bg-primary me-3" style="width: 45px; height: 45px; border-radius: 10px;">
-                                <i class="fa fa-check text-white"></i>
-                            </div>
-                            <h5 class="mb-0" style="font-weight: 600;">Flexible Learning Options</h5>
-                        </div>
-                        <span style="color: #666;">Whether online, offline, or hybrid — choose what suits you and study at your pace.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
-                    <img class="position-absolute w-100 h-100" src="img/Software/MultipleTraining.gif" alt="Training"
-                        style="object-fit: cover; border-radius: 15px;">
-                    <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/Software/MultipleTraining.gif" alt=""
-                        style="width: 200px; height: 200px; border: 4px solid #fff; border-radius: 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.1);">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Features End -->
-        
-        
-
- <!-- Overlay and Popup Form -->
-        
-        <div id="overlay" ></div>
-        <div id="popupForm" style="display: none" >
-            <span class="close-btn" onclick="hidePopup()">&times;</span> <!-- Close Button -->
-        <!---  <img class="img-fluid" src="img/NCAwelcome.jpeg" alt="Welcome Image"> -->
-            <img class="img-fluid" src="img/frompopup.jpg" alt="Welcome Image"> 
-            <form action="submit_form.php" method="post">
-                <h3>Fill Your Details</h3>
-                <label>Name:</label>
-                <input type="text" name="name" required>
-                <label>Phone Number:</label>
-                <input type="tel" name="phone" required>
-                <label>Email:</label>
-                <input type="email" name="email" required>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+// Close popup when clicking overlay
+document.getElementById('overlay').addEventListener('click', hidePopup);
+</script>   
 <?php
  include("footer.php");
    ?>
-     <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         <!-- JavaScript Libraries -->
         <!--Moving Course Carousel Indicators Card Start-->
         <script>
